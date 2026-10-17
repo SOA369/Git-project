@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation bar */
+        nav {
+            background: #222;
+            color: white;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: #00bcd4;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        /* Welcome section */
+        .hero {
+            min-height: 75vh;
+            background: linear-gradient(135deg, #007bff, #00bcd4);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: white;
+            color: #007bff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #eee;
+        }
+
+        /* About section */
+        .about {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .about p {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile layout */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>MyWebsite</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Welcome to My Homepage</h1>
+        <p>A simple and beautiful website built with HTML and CSS.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to my website! This is a simple homepage where
+            you can introduce yourself, your business, or your projects.
+            Customize this section with your own content.
+        </p>
+    </section>
+
+    <footer id="contact">
+        <p>Contact: hello@example.com</p>
+        <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
